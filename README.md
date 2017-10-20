@@ -5,12 +5,28 @@
 [![Downloads](https://img.shields.io/npm/dm/passover.svg)](http://npm-stat.com/charts.html?package=passover)
 [![guidelines](https://tether.github.io/contribution-guide/badge-guidelines.svg)](https://github.com/tether/contribution-guide)
 
-This is a simple description.
+Recursively traverse and object and return property.
 
 ## Usage
 
 ```js
+const passover = require('passover')
 
+const get = passover({
+  hello: 'world',
+  user: {
+    name: 'olivier',
+    family: {
+      sister: true
+    }
+  }
+})
+
+get('hello')
+// => 'world'
+
+get('user', 'family', 'sister')
+// => true
 ```
 
 ## Installation
