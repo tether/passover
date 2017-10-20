@@ -1,0 +1,26 @@
+{
+  "name": "passover",
+  "version": "1.0.0",
+  "description": "Recursively traverse an object and return property",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tether/passover.git"
+  },
+  "keywords": [
+    "traverse",
+    "recursive"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tether/passover/issues"
+  },
+  "homepage": "https://github.com/tether/passover#readme",
+  "devDependencies": {
+    "tape": "*"
+  }
+}
